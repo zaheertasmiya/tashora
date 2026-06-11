@@ -1,211 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Tashora | Health & Beauty Influencer Marketing</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        * { font-family: 'Inter', sans-serif; }
-        .font-serif { font-family: 'Playfair Display', serif; }
-        body { background-color: black; color: #e5e5e5; }
-        .gold-text { color: #FFD700; }
-        .gold-border { border-color: #FFD700; }
-        .gold-bg { background-color: #FFD700; color: black; }
-        .gold-bg:hover { background-color: #e6c200; transition: 0.3s; }
-        .btn-outline-gold { border: 1px solid #FFD700; background: transparent; transition: 0.3s; }
-        .btn-outline-gold:hover { background: #FFD700; color: black; }
-        .clickable-card { cursor: pointer; transition: all 0.2s ease; }
-        .clickable-card:hover { transform: translateY(-3px); border-color: #FFD700; }
-        .detail-content { display: none; margin-top: 1rem; padding: 1rem; background: #111; border-radius: 0.75rem; border-left: 3px solid #FFD700; }
-        .detail-content.show { display: block; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tashora | Influence Beyond Reach</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{background:#090909;color:#f5f5f5;font-family:Inter,sans-serif}
+.serif{font-family:'Playfair Display',serif}
+.gold{color:#D4AF37}
+.glass{background:rgba(255,255,255,.03);backdrop-filter:blur(12px);border:1px solid rgba(212,175,55,.18);}
+.card{transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.hero{background:radial-gradient(circle at top, rgba(212,175,55,.18), transparent 40%),#090909;}
+</style>
 </head>
-<body class="bg-black">
+<body>
 
-    <!-- Navigation with Logo Image -->
-    <nav class="px-6 md:px-12 py-5 flex justify-between items-center border-b border-yellow-800/50 sticky top-0 bg-black/90 backdrop-blur-sm z-50">
-        <div class="flex items-center gap-3">
-            <!-- Logo image - save your logo as "tashora-logo.png" or "tashora-logo.jpg" in the same folder -->
-            <img src="tashora-logo.png" alt="Tashora Logo" class="h-10 w-auto" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-2xl font-serif font-bold gold-text tracking-wide\'>TASHORA</span>'">
-            <span class="text-xs gold-text hidden md:inline-block">INFLUENCE BEYOND REACH</span>
-        </div>
-        <div class="hidden md:flex space-x-8 text-sm font-medium">
-            <a href="#home" class="hover:gold-text transition">Home</a>
-            <a href="#services" class="hover:gold-text transition">Services</a>
-            <a href="#brands" class="hover:gold-text transition">For Brands</a>
-            <a href="#creators" class="hover:gold-text transition">For Creators</a>
-        </div>
-        <div class="md:hidden text-white">☰</div>
-    </nav>
+<nav class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur border-b border-yellow-700/20">
+<div class="max-w-7xl mx-auto px-6 py-5 flex justify-between">
+<div>
+<div class="serif text-3xl gold">TASHORA</div>
+<div class="text-xs tracking-[4px] text-gray-400">INFLUENCE BEYOND REACH</div>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a href="#services">Services</a>
+<a href="#packages">Packages</a>
+<a href="#about">Why Tashora</a>
+<a href="https://wa.me/971522979634" class="bg-yellow-600 text-black px-5 py-2 rounded-full font-semibold">Book Call</a>
+</div>
+</div>
+</nav>
 
-    <main class="max-w-7xl mx-auto px-6 md:px-12 py-8 md:py-16" id="home">
+<section class="hero min-h-screen flex items-center">
+<div class="max-w-7xl mx-auto px-6 text-center w-full">
+<div class="inline-block px-4 py-2 rounded-full border border-yellow-700/30 gold mb-8">
+GCC • Beauty & Wellness Influencer Marketing
+</div>
 
-        <!-- Hero Section (unchanged) -->
-        <section class="text-center py-12 md:py-20">
-            <div class="inline-block px-4 py-1 rounded-full border border-yellow-600/40 text-yellow-400 text-xs uppercase tracking-wider mb-6">Health & Beauty • Influencer Marketing</div>
-            <h1 class="text-5xl md:text-7xl font-serif font-bold leading-tight">
-                <span class="gold-text">Influence</span><br>
-                <span class="text-white">Beyond Reach</span>
-            </h1>
-            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mt-6">
-                Contract backed campaigns that connect beauty & wellness brands with the right creators.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-5 justify-center mt-10">
-                <a href="mailto:mohammedzaheer@tashora.co?subject=Campaign%20Inquiry%20-%20Let's%20Talk&body=Hi%20Tashora%20team%2C%0A%0AI'm%20interested%20in%20starting%20a%20campaign." class="gold-bg font-semibold px-8 py-3 rounded-full text-black transition transform hover:scale-105 text-center">📢 Let's Talk Campaign (Brand)</a>
-                <a href="mailto:mohammedzaheer@tashora.co?subject=Creator%20Roster%20Application&body=Hi%2C%20I'd%20like%20to%20join%20Tashora's%20curated%20roster.%0A%0AMy%20niche%3A%20Health%20%26%20Beauty" class="btn-outline-gold font-semibold px-8 py-3 rounded-full text-gold-400 transition hover:bg-yellow-600 hover:text-black text-center">✨ Join Our Curated Roster (Creator)</a>
-            </div>
-        </section>
+<h1 class="serif text-6xl md:text-8xl leading-tight">
+<span class="gold">Influence</span><br>
+Beyond Reach
+</h1>
 
-        <!-- Services Section with Clickable Options -->
-        <section id="services" class="my-24">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-center gold-text">Our Services</h2>
-            <p class="text-center text-gray-400 mt-2 mb-10">Click any service to see details</p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Service 1 -->
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6 bg-black/60" onclick="toggleDetail('service1')">
-                    <div class="text-4xl mb-3">🎯</div>
-                    <h3 class="text-xl font-bold gold-text">Campaign Strategy</h3>
-                    <p class="text-gray-400 text-sm mt-1">Data-driven planning for maximum ROI</p>
-                    <div id="service1" class="detail-content">
-                        <p class="text-gray-300 text-sm">We analyze your brand goals, target audience, and competitors. Then we build a complete influencer campaign roadmap with clear KPIs, content guidelines, and timeline. <span class="gold-text">Includes monthly reporting.</span></p>
-                    </div>
-                </div>
-                <!-- Service 2 -->
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6 bg-black/60" onclick="toggleDetail('service2')">
-                    <div class="text-4xl mb-3">🤝</div>
-                    <h3 class="text-xl font-bold gold-text">Creator Matching</h3>
-                    <p class="text-gray-400 text-sm mt-1">Vetted health & beauty influencers</p>
-                    <div id="service2" class="detail-content">
-                        <p class="text-gray-300 text-sm">We hand-pick creators from our exclusive roster based on engagement, authenticity, and niche relevance. <span class="gold-text">You get shortlisted profiles before commitment.</span></p>
-                    </div>
-                </div>
-                <!-- Service 3 -->
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6 bg-black/60" onclick="toggleDetail('service3')">
-                    <div class="text-4xl mb-3">📊</div>
-                    <h3 class="text-xl font-bold gold-text">Performance Tracking</h3>
-                    <p class="text-gray-400 text-sm mt-1">Real-time dashboards & insights</p>
-                    <div id="service3" class="detail-content">
-                        <p class="text-gray-300 text-sm">Track impressions, engagement, conversions, and ROI. We provide weekly updates and a final campaign report. <span class="gold-text">Post-campaign analysis included.</span></p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<p class="max-w-3xl mx-auto text-xl text-gray-300 mt-8">
+Premium influencer campaigns connecting ambitious brands with trusted creators through transparent, contract-backed partnerships.
+</p>
 
-        <!-- For Brands Section with Clickable Options -->
-        <section id="brands" class="my-24">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-center gold-text">For Brands</h2>
-            <p class="text-center text-gray-400 mt-2 mb-10">Click a package to learn more</p>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6" onclick="toggleDetail('brandStandard')">
-                    <h3 class="text-xl font-bold gold-text">📦 Standard Campaign</h3>
-                    <p class="text-gray-400">3-5 creators • 30-day delivery</p>
-                    <div id="brandStandard" class="detail-content">
-                        <ul class="text-gray-300 text-sm space-y-2">
-                            <li>✅ 3 micro-influencers (10k-50k followers)</li>
-                            <li>✅ 10 Instagram posts + 5 stories each</li>
-                            <li>✅ 1 round of revisions</li>
-                            <li>✅ Basic performance report</li>
-                            <li class="gold-text">Pricing: Starting at $2,500</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6" onclick="toggleDetail('brandPro')">
-                    <h3 class="text-xl font-bold gold-text">🏆 Pro Campaign</h3>
-                    <p class="text-gray-400">5-8 creators • 45-day delivery</p>
-                    <div id="brandPro" class="detail-content">
-                        <ul class="text-gray-300 text-sm space-y-2">
-                            <li>✅ Mix of micro + macro influencers (50k-200k)</li>
-                            <li>✅ 20 posts + 15 stories + 2 Reels/TikToks each</li>
-                            <li>✅ 2 rounds of revisions + content rights</li>
-                            <li>✅ Advanced analytics + competitor benchmark</li>
-                            <li class="gold-text">Pricing: Starting at $5,000</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <a href="mailto:mohammedzaheer@tashora.co?subject=Campaign%20Inquiry%20-%20Let's%20Talk&body=Hi%20Tashora%20team%2C%0A%0AI'm%20interested%20in%20starting%20a%20campaign." class="gold-bg inline-block px-8 py-3 rounded-full font-semibold">📧 Request a Custom Quote</a>
-            </div>
-        </section>
+<div class="mt-12 flex flex-col md:flex-row justify-center gap-4">
+<a href="mailto:mohammedzaheer@tashora.co" class="bg-yellow-600 text-black px-8 py-4 rounded-full font-bold">Launch a Campaign</a>
+<a href="mailto:mohammedzaheer@tashora.co" class="border border-yellow-600 px-8 py-4 rounded-full">Join Creator Network</a>
+</div>
 
-        <!-- For Creators Section with Clickable Options -->
-        <section id="creators" class="my-24">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-center gold-text">For Creators</h2>
-            <p class="text-center text-gray-400 mt-2 mb-10">Click a benefit to see details</p>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6" onclick="toggleDetail('creatorPayment')">
-                    <h3 class="text-xl font-bold gold-text">💰 Guaranteed Payment</h3>
-                    <p class="text-gray-400">50% upfront, always</p>
-                    <div id="creatorPayment" class="detail-content">
-                        <p class="text-gray-300 text-sm">We secure 50% down payment before you start any work. The remaining 50% is held in escrow and released immediately after brand approval. <span class="gold-text">No chasing invoices.</span></p>
-                    </div>
-                </div>
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6" onclick="toggleDetail('creatorLegal')">
-                    <h3 class="text-xl font-bold gold-text">📝 Legal Protection</h3>
-                    <p class="text-gray-400">Contracts + usage rights</p>
-                    <div id="creatorLegal" class="detail-content">
-                        <p class="text-gray-300 text-sm">We provide ironclad contracts that protect your content ownership, set clear usage terms, and limit liability. We also handle disputes so you stay focused on creating.</p>
-                    </div>
-                </div>
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6" onclick="toggleDetail('creatorRates')">
-                    <h3 class="text-xl font-bold gold-text">⚡ Rate Negotiation</h3>
-                    <p class="text-gray-400">We fight for your best rate</p>
-                    <div id="creatorRates" class="detail-content">
-                        <p class="text-gray-300 text-sm">Our team negotiates higher payouts, bonuses for high performance, and fair usage fees. <span class="gold-text">Typical increase: 20-40% above market rate.</span></p>
-                    </div>
-                </div>
-                <div class="clickable-card border border-yellow-800/40 rounded-xl p-6" onclick="toggleDetail('creatorExposure')">
-                    <h3 class="text-xl font-bold gold-text">🌟 Brand Exposure</h3>
-                    <p class="text-gray-400">Work with top health & beauty brands</p>
-                    <div id="creatorExposure" class="detail-content">
-                        <p class="text-gray-300 text-sm">Get access to premium brands in skincare, wellness, supplements, and organic beauty. We match you based on your niche and audience values.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <a href="mailto:mohammedzaheer@tashora.co?subject=Creator%20Roster%20Application&body=Hi%2C%20I'd%20like%20to%20join%20Tashora's%20curated%20roster.%0A%0AMy%20niche%3A%20Health%20%26%20Beauty" class="btn-outline-gold inline-block px-8 py-3 rounded-full font-semibold">✨ Apply to Join Roster</a>
-            </div>
-        </section>
+<div class="grid md:grid-cols-4 gap-4 mt-20">
+<div class="glass rounded-3xl p-5">✓ Contract Backed</div>
+<div class="glass rounded-3xl p-5">✓ Carefully Sourced Creators</div>
+<div class="glass rounded-3xl p-5">✓ Transparent Process</div>
+<div class="glass rounded-3xl p-5">✓ Performance Reporting</div>
+</div>
+</div>
+</section>
 
-        <!-- Protection Sections (original) -->
-        <div class="grid md:grid-cols-2 gap-10 my-20">
-            <div class="bg-black border border-yellow-700/40 rounded-2xl p-8">
-                <h3 class="text-2xl font-bold gold-text flex items-center gap-2">🛡️ Protection for Brands</h3>
-                <ul class="mt-6 space-y-3">
-                    <li class="flex items-start gap-2"><span class="check-gold text-xl">✅</span> <span>2-stage payment: 50% down, 50% only after delivery.</span></li>
-                    <li class="flex items-start gap-2"><span class="check-gold text-xl">✅</span> <span>Review/Approval: Final sign-off on all content before it goes live.</span></li>
-                    <li class="flex items-start gap-2"><span class="check-gold text-xl">✅</span> <span>Replacement guarantee: If a creator drops out, we find a match fast.</span></li>
-                    <li class="flex items-start gap-2"><span class="check-gold text-xl">✅</span> <span>Refund policy: Clear terms for non-performance.</span></li>
-                </ul>
-            </div>
-            <div class="bg-black border border-yellow-700/40 rounded-2xl p-8">
-                <h3 class="text-2xl font-bold gold-text flex items-center gap-2">✨ Protection for Creators</h3>
-                <ul class="mt-6 space-y-3">
-                    <li class="flex items-start gap-2"><span class="check-gold text-xl">✅</span> <span>Confirmed down payment: We secure your 50% before you record.</span></li>
-                    <li class="flex items-start gap-2"><span class="check-gold text-xl">✅</span> <span>Deal negotiation: We fight for your rate and fair usage terms.</span></li>
-                    <li class="flex items-start gap-2"><span class="check-gold text-xl">✅</span> <span>Dispute management: We handle the tough conversations so you don't have to.</span></li>
-                    <li class="flex items-start gap-2"><span class="check-gold text-xl">✅</span> <span>Content ownership: Clearly defined rights for your peace of mind.</span></li>
-                </ul>
-            </div>
-        </div>
+<section id="about" class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="serif text-5xl gold text-center mb-14">Why Tashora</h2>
 
-        <!-- Footer -->
-        <footer class="text-center text-gray-500 text-sm py-10 border-t border-gray-800 mt-16">
-            <p>© 2026 Tashora — Influence Beyond Reach</p>
-            <p class="mt-1">Health & Beauty Influencer Marketing • Contract backed campaigns</p>
-            <p class="mt-2">📧 mohammedzaheer@tashora.co</p>
-        </footer>
-    </main>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="glass card rounded-3xl p-8">
+<h3 class="gold text-2xl font-bold">Boutique Approach</h3>
+<p class="mt-4 text-gray-300">Every campaign receives hands-on attention, tailored creator sourcing, and personalized strategy.</p>
+</div>
 
-    <script>
-        function toggleDetail(id) {
-            const detail = document.getElementById(id);
-            if (detail) {
-                detail.classList.toggle('show');
-            }
-        }
-    </script>
+<div class="glass card rounded-3xl p-8">
+<h3 class="gold text-2xl font-bold">Creator & Brand Alignment</h3>
+<p class="mt-4 text-gray-300">We focus on matching brands with creators who genuinely fit the audience and campaign objectives.</p>
+</div>
+
+<div class="glass card rounded-3xl p-8">
+<h3 class="gold text-2xl font-bold">Results Focused</h3>
+<p class="mt-4 text-gray-300">Our campaigns prioritize meaningful engagement, brand awareness and measurable outcomes.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-24 bg-black/30">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="serif text-5xl gold text-center mb-14">How It Works</h2>
+
+<div class="grid md:grid-cols-5 gap-6 text-center">
+<div class="glass rounded-3xl p-6"><div class="gold text-4xl">01</div><p>Campaign Brief</p></div>
+<div class="glass rounded-3xl p-6"><div class="gold text-4xl">02</div><p>Creator Selection</p></div>
+<div class="glass rounded-3xl p-6"><div class="gold text-4xl">03</div><p>Content Approval</p></div>
+<div class="glass rounded-3xl p-6"><div class="gold text-4xl">04</div><p>Campaign Launch</p></div>
+<div class="glass rounded-3xl p-6"><div class="gold text-4xl">05</div><p>Reporting</p></div>
+</div>
+</div>
+</section>
+
+<section id="services" class="py-24">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="serif text-5xl gold text-center mb-14">Services</h2>
+<div class="grid md:grid-cols-4 gap-6">
+<div class="glass rounded-3xl p-8">Campaign Strategy</div>
+<div class="glass rounded-3xl p-8">Creator Sourcing</div>
+<div class="glass rounded-3xl p-8">Campaign Management</div>
+<div class="glass rounded-3xl p-8">Performance Reporting</div>
+</div>
+</div>
+</section>
+
+<section id="packages" class="py-24">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="serif text-5xl gold text-center mb-16">Campaign Packages</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div class="glass rounded-[32px] p-10">
+<div class="text-gray-400 uppercase tracking-widest">Standard</div>
+<h3 class="gold text-4xl font-bold mt-4">Custom Quote</h3>
+<p class="mt-3 text-gray-400">Tailored creator selection • Custom campaign scope</p>
+<ul class="mt-8 space-y-3">
+<li>✓ 3 Curated Micro Creators</li>
+<li>✓ 1 Reel + 5 Story Frames</li>
+<li>✓ Creator Sourcing & Outreach</li>
+<li>✓ Content Review & Approvals</li>
+<li>✓ Campaign Performance Report</li>
+</ul>
+</div>
+
+<div class="rounded-[32px] p-10 border-2 border-yellow-600 bg-gradient-to-b from-yellow-900/20 to-black">
+<div class="inline-block bg-yellow-600 text-black px-3 py-1 rounded-full text-sm font-bold">MOST POPULAR</div>
+<div class="text-gray-400 uppercase tracking-widest mt-4">Pro</div>
+<h3 class="gold text-4xl font-bold mt-4">Custom Quote</h3>
+<p class="mt-3 text-gray-400">Scalable influencer campaigns • Premium management</p>
+<ul class="mt-8 space-y-3">
+<li>✓ 6 Curated Creators</li>
+<li>✓ 1 Reel + 5 Story Frames</li>
+<li>✓ Premium Creator Mix</li>
+<li>✓ Usage Rights Guidance</li>
+<li>✓ Dedicated Campaign Manager</li>
+<li>✓ Advanced Analytics & Reporting</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="py-24 bg-black/30">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="serif text-5xl gold text-center mb-14">Why Brands Choose Tashora</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+<div class="glass rounded-3xl p-8">✓ Contract-backed campaigns</div>
+<div class="glass rounded-3xl p-8">✓ Carefully sourced creators</div>
+<div class="glass rounded-3xl p-8">✓ Transparent communication</div>
+<div class="glass rounded-3xl p-8">✓ Dedicated campaign support</div>
+<div class="glass rounded-3xl p-8">✓ Performance reporting</div>
+<div class="glass rounded-3xl p-8">✓ Quality-first approach</div>
+</div>
+</div>
+</section>
+
+<section class="py-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-8">
+<div class="glass rounded-3xl p-8">
+<h3 class="gold text-3xl font-bold">Protection For Brands</h3>
+<ul class="mt-6 space-y-3">
+<li>✓ Payment secured before creator activation</li>
+<li>✓ Approval workflow</li>
+<li>✓ Creator replacement guarantee</li>
+<li>✓ Campaign reporting</li>
+<li>✓ Legally binding agreements</li>
+</ul>
+</div>
+
+<div class="glass rounded-3xl p-8">
+<h3 class="gold text-3xl font-bold">Protection For Creators</h3>
+<ul class="mt-6 space-y-3">
+<li>✓ Verified payments</li>
+<li>✓ Fair compensation</li>
+<li>✓ Contract review support</li>
+<li>✓ Usage-right protection</li>
+<li>✓ Dispute resolution</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-32 text-center">
+<h2 class="serif text-6xl gold">Ready To Launch Your Next Campaign?</h2>
+<p class="text-xl text-gray-300 mt-6">Let's build something exceptional together.</p>
+<a href="https://wa.me/971522979634" class="inline-block mt-10 bg-yellow-600 text-black px-10 py-5 rounded-full font-bold">
+Book a Strategy Call
+</a>
+</section>
+
+<footer class="border-t border-yellow-700/20 py-10 text-center text-gray-400">
+<p>© 2026 Tashora — Influence Beyond Reach</p>
+<p class="mt-2">mohammedzaheer@tashora.co</p>
+</footer>
+
 </body>
 </html>
